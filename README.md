@@ -13,13 +13,13 @@ For a more latency sensitive application, as well as one that I have more time t
 
 Steps for important functions:
 
-A. Enqueue:
+### Enqueue:
   1. Lock Work Queue Mutex ( Or Block until can Aquire Lock)
   2. Enqueue Item
   3. Unlock
   4. Signal Condition Variable notify_one
 
- B. try_pop
+### try_pop
    1. lock mutex
    2. check queue length
    3. if (length > 0) {
@@ -29,7 +29,7 @@ A. Enqueue:
    4. unlock
    5. return true
    6. else false
- C. wait_for_pop
+### wait_for_pop
    1. lock mutex
    2. spin on while queue empty
    3. conditin variable wait ( which does the unlock, lock on wakeup for you, thanks cpp11)
