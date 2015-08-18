@@ -29,6 +29,7 @@ Steps for important functions:
    4. unlock
    5. return true
    6. else false
+   
 ### wait_for_pop
    1. lock mutex
    2. spin on while queue empty
@@ -36,6 +37,8 @@ Steps for important functions:
    4. retvalue = queue.head;
    5. queue.pop;
    6. unlock mutex;
+   
+
 ## Parseing
 The strict requirements for syntax gave us the ability to write a very naive parser that if it encounters even the slightest wrong syntax it will throw exception. This helps greatly with debugging early on.
 
