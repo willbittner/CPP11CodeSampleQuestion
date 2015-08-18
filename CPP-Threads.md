@@ -42,7 +42,7 @@ A list of polish notation expressions and their results. (Said list does not hav
 
 >(/ (- 1 1) 42)
 
->(+ 2 (* (- 2 (/ -8 2) 8))
+>(+ 2 (* (- 2 (/ 8 2)) 8))
 
 >(+ (* (+ 2 (* (- 2 (/ 8 2)) 8)) (+ 2 (* (- 2 (/ 8 2)) 8))) (* (+ 2 (* (- 2 (/ 8 2)) 8)) (+ 2 (* (- 2 (/ 8 2)) 8))))
 
